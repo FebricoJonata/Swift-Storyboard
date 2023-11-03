@@ -13,8 +13,6 @@ class PaymentViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-//        ImageView.image = UIImage(named: "img")
     }
     
 
