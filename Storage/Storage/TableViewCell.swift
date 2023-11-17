@@ -1,17 +1,17 @@
 //
 //  TableViewCell.swift
-//  TableView
+//  Storage
 //
-//  Created by Febrico Jonata on 24/10/23.
+//  Created by Febrico Jonata on 17/11/23.
 //
 
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
-    @IBOutlet weak var TitleLbl: UILabel!
     
-
+    @IBOutlet weak var CellTextField: UITextField!
+    
+    var onUpdateHandler = {}
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +23,8 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    
 
+    @IBAction func Update(_ sender: Any) {
+        onUpdateHandler()
+    }
 }

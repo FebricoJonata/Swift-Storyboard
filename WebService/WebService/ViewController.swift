@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     func loadData(){
         let decoder = JSONDecoder()
         let urlCurhat = URL(string: "https://coba-api.douglasnugroho.com/getCurhat.php")!
+
         
         var request = URLRequest(url: urlCurhat)
         
